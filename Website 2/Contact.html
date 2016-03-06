@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MAA Waterford</title>
+	<link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">MMA Waterford</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+			<li class="divider"></li>
+          </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+          <div class="dropdown-menu">
+            <form id="formLogin" class="form container-fluid">
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <button type="button" id="btnLogin" class="btn btn-block">Login</button>
+            </form>
+            <div class="container-fluid">
+              <br>
+              <a class="small" href="#">Forgot password?</a>
+            </div> 	
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+	<div class="panel panel-default">
+	<div class="panel-body">
+	<img src="images/21.jpg" class="img-responsive center-block" alt="logo">
+	</div>   
+			<div class="jumbotron">
+	  <div class="container text-center">
+
+	
+			<div class="row" >
+			<div class="col-sm-8" ><h2>Contact Us</h2></br>
+			  <form class="query-form" action="formSubmitted.php" name="queryForm" onsubmit="return(formValidate());" novalidate>
+        <label for="inputFirstName" class="sr-only">First Name</label>
+        <input type="text" name="inputFirstName" class="form-control" placeholder="First Name" required autofocus></br>
+        <label for="inputLastName" class="sr-only">Last Name</label>
+        <input type="text" id="inputLastName" name="inputLastName" class="form-control" placeholder="Last Name" required></br>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required></br>
+        <label for="inputQuery" class="sr-only">Query</label>
+        <input type="text" id="inputQuery" name="inputQuery" class="form-control" placeholder="Enter your query here" required>
+        </br>
+		<button class="btn btn-lg btn-primary btn-primary" type="submit">Submit</button>
+      </form>
+</br>
+</br>
+  </div>
+	<div class="col-sm-4">
+	<h2>Get Connected</h2>
+			<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+			<a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+			<a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+			</br>
+			<h2>Address:</h2>
+			<p>Unit 50</br>Waterford Business Park</br>Cork Road</br>Waterford</p>
+			<h2>Contact:</h2>
+			<p>Tel: 051 354 687</p>
+			<p>Email: <a href="#">mmaw@gmail.com</a><p>
+			</br>
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:400px;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com">directory submission sites</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(52.2444438,-7.15667289999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.2444438,-7.15667289999999)});infowindow = new google.maps.InfoWindow({content:'<strong>MMA Waterford</strong><br>unit 50 waterford business park cork road waterford ireland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+	</div>
+	
+  </div>
+ </div>
+ </div>
+ </div>
+<div class="container">
+  
+
+
+	
+		
+    
+	
+	  
+ </div>
+<!-- /container -->
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation"
+		<div class="container">
+		<div class="navbar-text pull-left">
+			<p>Contact: 051 354 687</p>
+			<p>Email: <a href="#">mmaw@gmail.com</a>
+		</div>
+		<div class="navbar-text pull-right">
+		<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+		<a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+		<a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
+		<a href="#"><i class="fa fa-instagram fa-3x"></i><a>
+		</div>
+	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<?php $page = 'contact'; ?>
+
+<?php
+session_start();
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MAA Waterford</title>
+	<link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+  <body role="document">
+<?php include 'nav.php'; ?>
+      </div> 
+	  </nav>
+
+   
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<img src="Images/21.jpg" class="img-responsive center-block" alt="logo">
+		</div>   
+		<div class="jumbotron">
+			<div class="container text-center">
+				<div class="row" >
+					<div class="col-sm-8" ><h2>Contact Us</h2></br>
+						<form class="query-form" action="queryAdded.php" method="post" name="queryForm" onsubmit="return(formValidate());" novalidate>
+							<label for="FirstName" class="sr-only">FirstName</label>
+							<input type="text" name="FirstName" class="form-control" placeholder="First Name" required autofocus></br>
+							<label for="LastName" class="sr-only">LastName</label>
+							<input type="text" id="inputLastName" name="LastName" class="form-control" placeholder="Last Name" required></br>
+							<label for="Email" class="sr-only">EmailAddress</label>
+							<input type="email" id="inputEmail" name="Email" class="form-control" placeholder="Email address" required></br>
+							<label for="Query" class="sr-only">Query</label>
+							<input type="text" id="inputQuery" name="Query" class="form-control" placeholder="Enter your query here" required>
+							</br>
+							<button class="btn btn-lg btn-primary btn-primary" type="submit">Submit</button>
+						</form>
+						</br>
+						</br>
+						</div>
+						<div class="col-sm-4">
+							<h2>Get Connected</h2>
+							<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+							<a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+							<a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
+							<a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+							</br>
+							<h2>Address:</h2>
+							<p>Unit 50</br>Waterford Business Park</br>Cork Road</br>Waterford</p>
+							<h2>Contact:</h2>
+							<p>Tel: 051 354 687</p>
+							<p>Email: <a href="mailto:mmaw@gmail.com">mmaw@gmail.com</a><p>
+							</br>
+							<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:400px;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com">directory submission sites</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(52.2444438,-7.15667289999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.2444438,-7.15667289999999)});infowindow = new google.maps.InfoWindow({content:'<strong>MMA Waterford</strong><br>unit 50 waterford business park cork road waterford ireland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+						</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- /container -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation"
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>Contact: 051 354 687</p>
+				<p>Email: <a href="mailto:mmaw@gmail.com">mmaw@gmail.com</a>
+			</div>
+		<div class="navbar-text pull-right">
+			<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+			<a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+			<a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-3x"></i><a>
+		</div>
+		</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
